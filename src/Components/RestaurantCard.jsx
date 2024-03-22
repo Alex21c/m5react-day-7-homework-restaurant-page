@@ -63,9 +63,9 @@ export default class RestaurantCard extends Component{
     
     // console.log(this.state);
     return (
-      <section className="text-[1.2rem] bg-slate-50 max-w-[25rem]  rounded-xl shadow-xl">
+      <section className="text-[1.2rem] bg-slate-50 max-w-[25rem]  rounded-xl shadow-xl flex flex-col justify-between">
         <div className="p-[2rem] flex flex-col gap-[.5rem]">
-          <div className="flex gap-[.5rem] items-center">
+          <div className="wrapperRestaurantNameAndRating flex gap-[.5rem] items-center">
             <h2 className="text-[1.5rem] font-semibold text-slate-600 max-w-[12rem]">{this.state.name}</h2>
             <div className="text-[1.2rem]">
               {this.generateRatingsStars(this.state.rating)}
